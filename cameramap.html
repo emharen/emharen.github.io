@@ -17,7 +17,8 @@
 
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="drawing/tree.jpg">TRAFFIC</a>
+        <a href="#" class="navbar-left"><img src="logo.png"></a>  
+        <a class="navbar-brand" href="#">TRAFFIC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,9 +28,7 @@
           <li class="nav-item">
             <a class="nav-link" href="html_hw.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="comparisons.html">Comparisons</a>
-          </li>
+         
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Maps
@@ -41,6 +40,9 @@
                     <a class="dropdown-item" href="cameramap.html">Traffic Cameras</a>
           
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Further Analysis</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="data_html.html">Data</a>
@@ -56,10 +58,10 @@
 
         
         <div class="container">
-                <h1 class="display-4">Chicago Traffic Analysis</h1>
+                <h1 class="display-4">Red Light/Speed Camera Locations</h1>
                 <hr class="m-y-md" color="GoldenRod"/>
                 <p class="lead">  <div class="row">
-                    <!--First and Only Column in this Row-->
+                    
                     <div class="col-md-7">
                       <img alt="BAC Map" src="camerascrashes.png" alt="text"/> <br />
                     </div>
@@ -69,9 +71,31 @@
                         </p>
                     </div>
                     <div class="col-md-3">
-                            <p>Here the Red Light and Speed Cameras are overlayed onto the traffic crash map. 
+                            <p> <br /> <br /> Here the Red Light and Speed Cameras are overlayed onto the traffic crash map. Due to the lack of available crash data prior to camera installation, 
+                              it was not possible to prove causation or effect of camera installation on crash levels.
+                               However, the graphs below do show a correlation between the incidents of a crash and the number of cameras.
+
                               </p>
                           </div>
               </div>
+
+              <div class="row">
+                
+                <div class="col-md-6">
+                  <img alt="Crash Heatmap" src="Traffic CRashes vs. red light cameras.png" alt="text"/> <br />
+                  <p>Strong correlation between number of red light cameras and crashes <br/>
+                    r = 0.80 <br/>
+                    p = 2.35e-07
+                    </p>
+                </div>
+               
+                <div class="col-md-6">
+                    <img alt="Crash Heatmap" src="traffic crashesVSspeed.png" alt="text"/> <br />
+                    <p>Strong correlation between number of speed cameras and crashes  <br />
+                        r = 0.71
+                        <br />
+                        p = 1.43e-05
+                        </p>
+                </div>
 
   </body>

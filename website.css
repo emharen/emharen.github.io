@@ -1,0 +1,10 @@
+.btn{
+    background: #ddaf15;
+    color: #ffffff;
+}
+.btn:hover { 
+    border-color: #C0C0C0; 
+    background-color: #C0C0C0; 
+  }
+
+  body {background-color:rgb(255, 255, 255);}

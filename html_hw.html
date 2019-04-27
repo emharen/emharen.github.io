@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8">
+  <title>Lorem Grid</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="website.css" media="screen" />
+
+    </head>
+
+<body>
+
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a href="#" class="navbar-left"><img src="logo.png"></a>   
+          <a class="navbar-brand" href="#">TRAFFIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Maps
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="crashes.html">Crashes</a>  
+              <a class="dropdown-item" href="BACmap.html">BAC</a>
+              <a class="dropdown-item" href="speedmap.html">Speeding</a>
+              <a class="dropdown-item" href="cameramap.html">Traffic Cameras</a>
+          
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Further Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data_html.html">Data</a>
+          </li>
+        </ul>
+     
+      </div>
+    </nav>
+
+
+<div class="row">
+<div class="col-md-8">
+  <div class="jumbotron jumbotron-fluid">
+ 
+                    <div class="container">
+                      <h1 class="display-">Chicago Traffic Analysis</h1>
+                      <hr class="m-y-md" color="GoldenRod"/>
+                      <p class="lead">  
+                         
+                      <div class="row">
+                          <div class="col-md-8">
+                            <img alt="Crash Heatmap" src="chicagopic.png" alt="text"/> <br />
+                          </div>
+                         
+                          <div class="col-md-4">
+                            <p>The purpose of this project was to study traffic in the City of Chicago, including congestion, crash, and traffic camera data, all of which has been made publicly available by the City of Chicago. <br /> <br />
+                               We gathered data from data.cityofchicago.org, via the Socrata Open Data API (SODA) or direct .csv download, imported and reviewed data using Python and the Pandas library, and created visualizations with Matplotlib, Seaborn, and Google Maps. 
+                      </div>
+
+                              </p>
+                          </div>
+                    </div>
+                  </div> 
+                </div>
+
+           <div class="col-md-4">
+              <div class="jumbotron">
+                  <h2 class="display-4">Maps</h2>
+                  <hr class="my-4" color=goldenrod>
+          
+               
+                <table border="0" cellpadding="5">
+                
+                  <tr>
+                  
+                  <td align="center" valign="center">
+                  <a href="crashes.html"><img src="small.png" alt="description here" /></a>
+                  <br />
+                   Crashes
+                  </td>
+                 
+                  <td align="center" valign="center">
+                  <a href="BACmap.html"><img src="bacmaap2.png" alt="description here" /></a>
+                  <br />
+                   BAC
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" valign="center">
+                    <a href="speedmap.html"><img src="speeding2.png" alt="description here" /></a>
+                    <br />
+                    Speeding
+                    </td>
+
+                    <td align="center" valign="center">
+                        <a href="cameramap.html"><img src="camerascrashes2.png" alt="description here" /></a>
+                      <br />
+                      Traffic Cameras
+                      </td>
+                  
+                  </tr>
+                  
+                  </table>
+                </div>   
+           </div>
+                </body>
+                </html>
+                 
