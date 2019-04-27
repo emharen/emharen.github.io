@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8">
+  <title>Lorem Grid</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="website.css" media="screen" />
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-left"><img src="logo.png"></a>   
+        <a class="navbar-brand" href="drawing/tree.jpg">TRAFFIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="html_hw.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Maps
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="crashes.html">Crashes</a>  
+                <a class="dropdown-item" href="BACmap.html">BAC</a>
+                <a class="dropdown-item" href="speedmap.html">Speeding</a>
+                <a class="dropdown-item" href="cameramap.html">Traffic Cameras</a>
+          
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="data_html.html">Data<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      
+      </div>
+    </nav>
+
+  </head>
+  <body>              
+
+                   <div class="container">
+                        <h1 class="display-4">Data</h1>
+                        <hr class="m-y-md" color="GoldenRod"/>
+                
+                            <div class="col-md-11">
+                              <p>Below are links to all the datasets used in the traffic analysis. The following table shows all the data from the "Congestion by Regions" dataset, from which we obtained the boundaries for separating Chicago into 29 regions. 
+                                </p>
+                                <a href="https://data.cityofchicago.org/Transportation/Chicago-Traffic-Tracker-Congestion-Estimates-by-Re/t2qc-9pjd" target="_blank" class="btn" role="button">Congestion by Region</a>
+                                <a href="https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if" target="_blank" class="btn" color="GoldenRod" role="button">Traffic Crashes</a>
+                                <a href="https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d" target="_blank" class="btn" role="button">Traffic Crashes-People</a>
+                                <a href="https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3" target="_blank" class="btn" role="button">Traffic Crashes-Vehicles</a>
+                                <a href="https://data.cityofchicago.org/Transportation/Speed-Camera-Locations/4i42-qv3h" target="_blank" class="btn" role="button">Speed Camera-Locations</a>
+                                
+                                <br /> <br />
+                                <a href="https://data.cityofchicago.org/Transportation/Speed-Camera-Violations/hhkd-xvj4" target="_blank" class="btn" role="button">Speed Camera-Violations</a>
+                                <a href="https://data.cityofchicago.org/Transportation/Red-Light-Camera-Locations/thvf-6diy" target="_blank" class="btn" role="button">Red Light Camera-Locations</a>
+                                <a href="https://data.cityofchicago.org/Transportation/Red-Light-Camera-Violations/spqx-js37" target="_blank" class="btn" role="button">Red Light Camera-Violations</a>
+                               
+                                <br />    <br />
+                            </div>                 
+
+                         
+                    <div style="overflow-x:auto;">
+                            <table class="table table-bordered table-hover table-condensed"> 
+                                <thead><tr><th title="Field #1">REGION</th>
+                                <th title="Field #2">REGION_ID</th>
+                                <th title="Field #3">WEST</th>
+                                <th title="Field #4">EAST</th>
+                                <th title="Field #5">SOUTH</th>
+                                <th title="Field #6">NORTH</th>
+                                <th title="Field #7">DESCRIPTION</th>
+                                <th title="Field #8">CURRENT_SPEED</th>
+                                <th title="Field #9">LAST_UPDATED</th>
+                                </tr></thead>
+                                <tbody><tr>
+                                <td>Far North West</td>
+                                <td align="right">2</td>
+                                <td align="right">-87.84621</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">41.960669</td>
+                                <td align="right">42.0190998</td>
+                                <td>North of Montrose. East River to Cicero</td>
+                                <td align="right">26.59</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>North Park-Albany-Linconl Sq</td>
+                                <td align="right">3</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.67459</td>
+                                <td align="right">41.960669</td>
+                                <td align="right">41.997946</td>
+                                <td>Montrose to Devon. Cicero to Ravenswood</td>
+                                <td align="right">22.5</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Edge Water-Uptown</td>
+                                <td align="right">4</td>
+                                <td align="right">-87.67459</td>
+                                <td align="right">-87.646438</td>
+                                <td align="right">41.960669</td>
+                                <td align="right">41.997946</td>
+                                <td>Montrose to Devon. Ravenswood to Lake Shore</td>
+                                <td align="right">21.14</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Hermosa-Logan Square</td>
+                                <td align="right">7</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.67459</td>
+                                <td align="right">41.909269</td>
+                                <td align="right">41.931841</td>
+                                <td>North Ave to Diversy. Cicero to Ravenswood</td>
+                                <td align="right">21.82</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Rogers Park - West Ridge</td>
+                                <td align="right">1</td>
+                                <td align="right">-87.709645</td>
+                                <td align="right">-87.654561</td>
+                                <td align="right">41.997946</td>
+                                <td align="right">42.026444</td>
+                                <td>North of Devon. Kedzie to Lake Shore</td>
+                                <td align="right">24.55</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Hyde Park-Kenwood-Woodlawn</td>
+                                <td align="right">21</td>
+                                <td align="right">-87.606334</td>
+                                <td align="right">-87.56626</td>
+                                <td align="right">41.764066</td>
+                                <td align="right">41.822792</td>
+                                <td>71st to Pershing. Cottage Grove to Lake Shore</td>
+                                <td align="right">23.18</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>South Deering-East Side</td>
+                                <td align="right">27</td>
+                                <td align="right">-87.584845</td>
+                                <td align="right">-87.524436</td>
+                                <td align="right">41.677477</td>
+                                <td align="right">41.728472</td>
+                                <td>119th to 91st. Stony Island to State Line</td>
+                                <td align="right">30.68</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Humboldt-Garfield Prk E/W</td>
+                                <td align="right">10</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.691617</td>
+                                <td align="right">41.866129</td>
+                                <td align="right">41.909269</td>
+                                <td>Roosevelt to North Ave. Cicero to Rockwell</td>
+                                <td align="right">21.82</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Washington Hts-Roseland-Pullman</td>
+                                <td align="right">26</td>
+                                <td align="right">-87.662508</td>
+                                <td align="right">-87.584845</td>
+                                <td align="right">41.677477</td>
+                                <td align="right">41.728472</td>
+                                <td>119th to 91st. Ashland to Stony Island</td>
+                                <td align="right">27.27</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Near South-Douglas</td>
+                                <td align="right">16</td>
+                                <td align="right">-87.636322</td>
+                                <td align="right">-87.597952</td>
+                                <td align="right">41.822792</td>
+                                <td align="right">41.866129</td>
+                                <td>Pershing to Roosevelt. Stewart to Lake Shore</td>
+                                <td align="right">26.59</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Irving Park-Avondale-North Ctr</td>
+                                <td align="right">6</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.67459</td>
+                                <td align="right">41.931841</td>
+                                <td align="right">41.960669</td>
+                                <td>Diversey to Montrose. Cicero to Ravenswood</td>
+                                <td align="right">22.5</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Dunning-Portage-Belmont Cragn</td>
+                                <td align="right">5</td>
+                                <td align="right">-87.84621</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">41.909269</td>
+                                <td align="right">41.960669</td>
+                                <td>North Ave to Montrose. East River to Cicero</td>
+                                <td align="right">23.18</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Chicago Loop</td>
+                                <td align="right">13</td>
+                                <td align="right">-87.647208</td>
+                                <td align="right">-87.62308</td>
+                                <td align="right">41.866129</td>
+                                <td align="right">41.88886</td>
+                                <td>Roosevelt to Wacker: Halsted to Michigan</td>
+                                <td align="right">13.64</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Lincoln Park-Lake View</td>
+                                <td align="right">8</td>
+                                <td align="right">-87.67459</td>
+                                <td align="right">-87.619112</td>
+                                <td align="right">41.910561</td>
+                                <td align="right">41.960669</td>
+                                <td>North Ave to Montrose. Ravenswood to Lake Shore</td>
+                                <td align="right">20.45</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Downtown Lakefront</td>
+                                <td align="right">29</td>
+                                <td align="right">-87.62308</td>
+                                <td align="right">-87.595378</td>
+                                <td align="right">41.866129</td>
+                                <td align="right">41.911401</td>
+                                <td>Roosevelt to Oak. Michigan to Lake Shore</td>
+                                <td align="right">22.5</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>West Town-Near West</td>
+                                <td align="right">11</td>
+                                <td align="right">-87.691617</td>
+                                <td align="right">-87.647208</td>
+                                <td align="right">41.866129</td>
+                                <td align="right">41.910561</td>
+                                <td>Roosevelt to North. Rockwell to Halsted</td>
+                                <td align="right">21.14</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Lawndale N/S</td>
+                                <td align="right">14</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.685372</td>
+                                <td align="right">41.822792</td>
+                                <td align="right">41.866129</td>
+                                <td>Pershing to Roosevel. Cicero to Western</td>
+                                <td align="right">24.55</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Near North</td>
+                                <td align="right">12</td>
+                                <td align="right">-87.647208</td>
+                                <td align="right">-87.62308</td>
+                                <td align="right">41.88886</td>
+                                <td align="right">41.911401</td>
+                                <td>Wacker to North. Halsted to  Michigan</td>
+                                <td align="right">19.09</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Fuller-Grand Blvd-Washington Park</td>
+                                <td align="right">20</td>
+                                <td align="right">-87.636322</td>
+                                <td align="right">-87.606334</td>
+                                <td align="right">41.764066</td>
+                                <td align="right">41.822792</td>
+                                <td>71st to Pershing. Steward to Cottage Grove</td>
+                                <td align="right">24.55</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Austin</td>
+                                <td align="right">9</td>
+                                <td align="right">-87.775947</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">41.866129</td>
+                                <td align="right">41.909269</td>
+                                <td>Roosevelt to North Ave. Austin to Cicero</td>
+                                <td align="right">25.23</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>New City-Englewood-W Englewood</td>
+                                <td align="right">19</td>
+                                <td align="right">-87.68373</td>
+                                <td align="right">-87.636322</td>
+                                <td align="right">41.764066</td>
+                                <td align="right">41.822792</td>
+                                <td>71st to Pershing. Western to Steward</td>
+                                <td align="right">25.91</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Auburn Gresham-Chatham</td>
+                                <td align="right">23</td>
+                                <td align="right">-87.67298</td>
+                                <td align="right">-87.606334</td>
+                                <td align="right">41.728472</td>
+                                <td align="right">41.764066</td>
+                                <td>91st to 71st. Damen to Cottage Grove</td>
+                                <td align="right">22.5</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Ashburn</td>
+                                <td align="right">22</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.67298</td>
+                                <td align="right">41.728472</td>
+                                <td align="right">41.764066</td>
+                                <td>91st to 71st. Cicero to Damen</td>
+                                <td align="right">29.32</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Beverly-Mt Greenwood-Morgan Park</td>
+                                <td align="right">25</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.662508</td>
+                                <td align="right">41.677477</td>
+                                <td align="right">41.728472</td>
+                                <td>119th to 91st. Cicero to Ashland</td>
+                                <td align="right">30.68</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>South Shore-S Chicago-Avlon</td>
+                                <td align="right">24</td>
+                                <td align="right">-87.606334</td>
+                                <td align="right">-87.526388</td>
+                                <td align="right">41.728472</td>
+                                <td align="right">41.764066</td>
+                                <td>91st to 71st. Cottage Grove to Lake Shore</td>
+                                <td align="right">26.59</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Riverdale-Hegewisch</td>
+                                <td align="right">28</td>
+                                <td align="right">-87.662508</td>
+                                <td align="right">-87.524436</td>
+                                <td align="right">41.644139</td>
+                                <td align="right">41.677477</td>
+                                <td>138th to 119th. Ashland to State Line</td>
+                                <td align="right">32.73</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>South West Side</td>
+                                <td align="right">18</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">-87.68373</td>
+                                <td align="right">41.764066</td>
+                                <td align="right">41.822792</td>
+                                <td>71st to Pershing. Cicero to Western</td>
+                                <td align="right">25.23</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Midway-Garfield Rdg-Clearing</td>
+                                <td align="right">17</td>
+                                <td align="right">-87.802188</td>
+                                <td align="right">-87.747456</td>
+                                <td align="right">41.764066</td>
+                                <td align="right">41.822792</td>
+                                <td>71st to Pershing. Halem to Cicero</td>
+                                <td align="right">29.05</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                <tr>
+                                <td>Bridgeport-McKinley-Lower West</td>
+                                <td align="right">15</td>
+                                <td align="right">-87.685372</td>
+                                <td align="right">-87.636322</td>
+                                <td align="right">41.822792</td>
+                                <td align="right">41.866129</td>
+                                <td>Pershing to Roosevel. Western to Stewart</td>
+                                <td align="right">26.59</td>
+                                <td>2019-03-21 09:31:39.0</td>
+                                </tr>
+                                </tbody></table>
+                                </div>
+   
+       
+      </body>                     
+             
